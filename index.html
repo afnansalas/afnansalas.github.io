@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Afnan salas</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="w3.css">
+        <link rel="stylesheet" type="text/css" href="tugas13.css">
+            </head>
+    <script>
+    function selectbar(evt, section) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("section");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-light-blue", "");
+  }
+  document.getElementById(section).style.display = "block";
+  evt.currentTarget.className += " w3-light-blue";
+}
+</script>
+
+   
+    <body>
+         <nav>
+        <header class="my-header">
+            <div class="my-headtext">
+                <h1><b>MY PAGE.</b></h1>
+            </div>
+        </header>
+       
+        <div class="w3-bar">
+            <div class="button" style="display: grid; grid-template-columns: repeat(6, 1fr); justify-content: center;">
+                <button class="w3-bar-item w3-button tablink w3-light-blue" onclick="selectbar(event,'home')">HOME</button>
+                <button class="w3-bar-item w3-button tablink" onclick="selectbar(event,'profil')">PROFIL</button>
+                <!-- <button class="w3-bar-item w3-button" onclick="selectbar('hoby')">HOBI</button> -->
+                <button class="w3-bar-item w3-button tablink " onclick="selectbar(event,'hoby')">HOBY</button>
+                <button class="w3-bar-item w3-button tablink " onclick="selectbar(event,'about')">ABOUT</button>
+                <button class="w3-bar-item w3-button tablink" onclick="selectbar(event,'spin')">SPIN</button>
+                <button class="w3-bar-item w3-button tablink" onclick="selectbar(event,'contact')">CONTACT</button>
+            </div>
+        </div>
+        </nav>
+
+       <!--untuk home-->
+        <div id="home" class="section" style="display: block;">
+                    <center>
+                    <img class="my-imagehome" src="welcom.jpg" width="100%" height="300px" >
+                    </center>     
+        </div>
+
+        <!--untuk profil-->
+        <div class="profil">
+        <div id="profil" class="w3-animate-top section" style="display: none;">
+                <div class="profil w3-center w3-light-blue w3-container w3-card-4">
+                     <h1><b>PROFIL</b></h1>
+                </div>
+                        <center>
+                    <div class="w3-container w3-animate-zoom">
+                    <table>
+                    <tr>
+                        <td>
+                            <p><b>Nama : AFNAN SALAS</b></p>
+                            <p><b> Kelas : IF - 7</b></p>
+                            <p><b> NIM : 10122482</b></p>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+                </center>
+            </div>
+            </div>
+
+        <!---untuk hoby-->
+        <div class="wrapper">
+        <div id="hoby" class="section" style="display: none;">
+            <div class="hoby w3-center w3-animate-bottom w3-light-blue w3-container w3-card-4">
+            <h1><b>MY HOBBY</b></h>
+        </div>
+        <p>
+            <table> 
+                <tr class="center w3-card-4 w3-animate-top">
+                    <td><img src="bola.jpg" width="350px" height="220px">
+                    <td><img src="ciremai.jpg"  width="340px" height="220px">
+                    <td><img src="futsal.jpg"  width="340px" height="220px">
+                    <td><img src="renang.jpg"  width="300px" height="220px">
+                
+            </table>
+         </div>
+         </div>
+
+
+         <!--untuk about-->
+        <div id="about" class="section" style="display: none;">
+            <div class="about w3-container w3-animate-zoom w3-card-4 w3-light-blue w3-center">
+            <h1><b>ABOUT</b></h1>
+            </div>
+            <div class="about w3-animate-bottom">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur facere explicabo aliquid sint et! Architecto expedita ad, porro earum unde nihil neque quod ea voluptatum repudiandae ex eum aspernatur nulla dolor ducimus non eos facere obcaecati? Dicta et eos consectetur expedita dolores inventore sapiente enim, Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim distinctio quidem eos laboriosam deserunt id quo iure delectus. Et.<strong> alias minus voluptatum ea nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, eos?</strong></p>
+            </div>
+        </div> 
+
+
+        <!--untuk spin-->
+      
+        <div id="spin" class=" w3-animate-left section" style="display: none;">
+            <div class="spin w3-center w3-container w3-card-4 w3-light-blue">
+            <h1><b>Penganut Teori Bumi Datar</b></h1>
+            </div>
+            <div class="spin w3-spin w3-center">
+            <p><img src="bumi.png">
+            </p>
+            </div>
+        </div>
+  
+               
+
+       <!--untuk contact-->
+        <div id="contact" class="section" style="display: none;">
+            <div class="w3-container w3-animate-bottom w3-card-4 w3-center w3-light-blue">
+                <h1><b>CONTACT INFO</b></h1>
+            </div>
+              <div class="footer w3-animate-zoom">
+          <div class="footer-section">
+          <h3><b>Address</Address>.</b></h3>
+          <p>
+           jln.sangkuriang dago, coblong, COBLONG, KOTA BANDUNG, JAWA BARAT
+          </p>
+           </p>
+          <p>kode pos : 40134</p>
+        </div>
+          <div class="footer-section">
+          <h3><b>E-mail.</b></h3>
+          <p>
+          Afnansalas6@gmail.com
+        </div>
+          <div class="footer-section">
+          <h3><b>No.HP</b></h3>
+          <p>
+          081315990354
+        </div>
+         <div class="footer-section">
+          <h3><b>Social.</b></h3>
+          <p><b>instagram :</b><a href="https://www.instagram.com/afnansls/?next=%2Fstories%2Fhighlights%2F17927550731394607%2F&hl=id">@afnansls</a>
+          </p>
+        </div>
+      </div>
+      <div class="w3-animate-top">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.064290679217!2d107.60806541468936!3d-6.882902195026301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6f9ee6b4b69%3A0x2c2f6fafc909cd3e!2sJl.%20Sangkuriang%2C%20Dago%2C%20Kecamatan%20Coblong%2C%20Kota%20Bandung%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1674539020703!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+    </div>
+
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2023. <b>Afnansalas.</b> All Rights Reserved.    
+        </div>
+    </div>  
+    </div>
+
+    </body>
+</html>
